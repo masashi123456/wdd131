@@ -1,0 +1,52 @@
+body{
+    margin:0 auto;
+}
+
+header{
+    text-align: center;
+    border-bottom: 2px solid rgba(255, 166, 0, 0.466);
+}
+
+h1{
+    margin:1rem;
+}
+
+.links{
+    border-top: 2px solid rgba(255, 166, 0, 0.466);
+    text-decoration:none;
+    list-style: none;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    gap:1rem;
+    margin: 1rem;
+
+}
+
+.links a{
+    text-align: left;
+    text-decoration: none;
+    color: rgba(255, 0, 0, 0.479);
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.review{
+    display: grid;
+    grid-template-columns: 1 fr;
+    margin: 0 auto;
+}
+
+@media(min-width:760px){
+    .review{
+        grid-template-columns: 200px 1fr;
+        align-items: start;
+    }
+}
+
+
+

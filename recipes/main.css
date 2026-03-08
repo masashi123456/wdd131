@@ -1,0 +1,114 @@
+body{
+    margin: 20px;
+}
+header{
+    display:flex;
+    justify-content: center;
+}
+
+#mIcon{
+    width:80px
+}
+
+#search-box{
+    margin-top: 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#search{
+    display: flex;
+    border:1px solid black;
+}
+
+#search button{
+    background-color: white;
+    border-color: white;
+}
+
+#maglass{
+    width: 20px;
+}
+
+
+
+.recipe{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    margin:20px;  
+    padding: 16px;  
+}
+
+.recipe img{
+    width:100%;
+    align-self: center;
+}
+
+.tag{
+    margin-top: 0;
+    display: inline-block;
+    background-color: rgb(205, 203, 203);
+    padding: 4px;  
+    align-self: flex-start;
+}
+
+.description{
+    display: none;
+}
+
+
+
+
+
+
+
+.social{
+    display: flex;
+    justify-content: center;
+}
+
+.social a{
+    width:60px;
+}
+
+footer a{
+    margin-top:1.5rem;
+    display:flex;
+    justify-content: center;
+}
+
+@media screen and (min-width:768px){
+    .recipe{
+        flex-direction: row;
+        align-items: flex-start;
+        gap:20px;
+    }
+    
+    .recipe img{
+        flex:1;
+        width: 300px;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .description{
+        display: block;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap:20px;
+
+    }
+
+    .social{
+        order:+1;
+    }
+}

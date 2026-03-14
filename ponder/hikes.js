@@ -81,7 +81,7 @@ function search(){
   let hikeQuery = document.querySelector('#search').value;
   let filterHikes =hikes.filter(function(hike){
     return(
-      hike.name.toLowerCase().includes(jikeQuery.toLowerCase()) ||
+      hike.name.toLowerCase().includes(hikeQuery.toLowerCase()) ||
       hike.description.toLowercase().includes(hikeQuery.toLowerCase()) ||
       hike.tags.find(tag=>tag.lowerCase().includes(hikeQuery.toLowerCase()))
     );

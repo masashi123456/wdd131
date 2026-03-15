@@ -16,8 +16,7 @@
     <link rel="icon" href="/favicon.ico">
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">      
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="main.css"> 
-    <script src="main.js" defer></script>       
+    <link rel="stylesheet" href="main.css">        
 </head>
 <body>
     <header>
@@ -26,17 +25,39 @@
     </header>
 
     <main>
-        <form id="search-box">
-            <div id="search">
-                <input type="text" id="search_input" placeholder="Find a recipe">
-                <button type="submit">
-                    <img id="maglass" src="images/search.svg" alt="search">
-                </button> 
-            </div>
-            
-        </form>
+        <div id="search-box">
+            <form action="/search" method="get">
+                <div id="search">
+                    <input type="text" id="search_input" placeholder="Find a recipe">
+                    <button type="submit">
+                        <img id="maglass" src="images/search.svg" alt="search">
+                    </button> 
+                </div>
+            </form>
+        </div>
 
-        <div id="recipe-book"></div>
+        <div class="recipe">
+            <img src="images/apple-crisp.jpg" alt="apple-crisp">
+            <div class="container">
+
+                <p class="tag">dessert</p>
+                <h1>APPLE CRISP</h1>    
+                <span
+                    class="rating"
+                    role="img"
+                    aria-label="Rating: 4 out of 5 stars"
+                    >
+                    <span aria-hidden="true" class="icon-star">⭐</span>
+                    <span aria-hidden="true" class="icon-star">⭐</span>
+                    <span aria-hidden="true" class="icon-star">⭐</span>
+                    <span aria-hidden="true" class="icon-star">⭐</span>
+                    <span aria-hidden="true" class="icon-star-empty">☆</span>
+                </span>
+                <div class="description">
+                    <p>This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream</p>
+                </div>
+            </div>
+        </div>
 
     </main>
 
